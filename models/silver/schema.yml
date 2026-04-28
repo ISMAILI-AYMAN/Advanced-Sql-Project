@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: silver_train_data
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+      - name: cycle
+        tests:
+          - not_null
+      - name: sensor_1
+        tests:
+          - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - unit_id
+            - cycle
+
+  - name: silver_test_data
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+      - name: cycle
+        tests:
+          - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - unit_id
+            - cycle
+
+  - name: silver_rul_truth
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+          - unique
+      - name: rul_truth
+        tests:
+          - not_null
+
+  - name: silver_data_quality_report
+    columns:
+      - name: check_name
+        tests:
+          - not_null

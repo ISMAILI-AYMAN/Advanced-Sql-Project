@@ -1,0 +1,13 @@
+file_id,file_path,split,checksum_sha256,record_count,size_bytes,status
+f0ca6c75-0b54-4b18-9e50-fa3c0d16f215,data/raw/train/train_FD001.txt,train,963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8,20631,3515356,approved
+3bf37dff-d852-4571-93cf-69da7de1d6dd,data/raw/train/train_FD002.txt,train,dac6c4dbc4e7c1bdeb5747da3d313d05c395bb99801b44a002b26a2ba13d788f,53759,9082480,approved
+afe1b4d0-1890-4788-ba7b-21379a92f8c4,data/raw/train/train_FD003.txt,train,2abbe9968cc5e8eb091980f51b20f62bb4127336d3482cb52071d53bf23329e2,24720,4213862,approved
+d85e2431-9c94-4503-864c-dae831b3bbdb,data/raw/train/train_FD004.txt,train,27ef6160b6a1dcb2613a88de9c239f763b223f02cdc41dc5cdedc5dc189b6218,61249,10350705,approved
+fb9ed6c9-bcb1-4cf6-ad38-c3c669c60c7a,data/raw/test/test_FD001.txt,test,3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851,13096,2228855,approved
+92bd1e75-132f-4f2d-a9fa-e6cbc2e05c0a,data/raw/test/test_FD002.txt,test,de7b5bf7e998a985c378488480528b7c02cff1406a46740def362dda8d9b4e02,33991,5734587,approved
+6a19ad55-6338-4f51-a292-804f90ee5a71,data/raw/test/test_FD003.txt,test,299babd63c8d987cef079c4a425429f33b3a34797d803bbe2ad48c29dbd0d790,16596,2826651,approved
+f8787a6e-8f7d-404b-a52c-184e5246ec81,data/raw/test/test_FD004.txt,test,1dc675fff0624bac10786927c6715b37d1297657137400d2b1a3138d777a3ba5,41214,6957759,approved
+b5d85387-9e90-4c88-892d-ec8390fc026b,data/raw/truth/RUL_FD001.txt,truth,a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca,100,429,approved
+0da1b678-d646-45d1-9acc-9885a02321b7,data/raw/truth/RUL_FD002.txt,truth,c851dd96a6ea6998d3c4a8f834d3c8013aa90e93a6ed950dc826ad0655b2906b,259,1110,approved
+66d7cc88-00fb-4268-bb6f-08e956416182,data/raw/truth/RUL_FD003.txt,truth,df1e0566306b174a2de41c67a3e7a51877889598b78643fc3e5685259091b7cb,100,428,approved
+2020d5f0-de61-4082-a789-9f7ce32ea41a,data/raw/truth/RUL_FD004.txt,truth,196b836b85a95ac7fdbbf29c5fdf1657382eafa445644d114ffaaf50dc2975e1,248,1084,approved

@@ -1,0 +1,62 @@
+name: ci
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: cmapss
+          POSTGRES_USER: cmapss
+          POSTGRES_PASSWORD: cmapss
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U cmapss -d cmapss"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      PGHOST: localhost
+      PGPORT: 5432
+      PGDATABASE: cmapss
+      PGUSER: cmapss
+      PGPASSWORD: cmapss
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          dbt deps --project-dir .
+
+      - name: Install PostgreSQL client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Bootstrap schemas and tables
+        run: |
+          psql "host=localhost port=5432 dbname=cmapss user=cmapss password=cmapss" -f sql/ddl/001_create_schemas.sql
+          psql "host=localhost port=5432 dbname=cmapss user=cmapss password=cmapss" -f sql/ddl/010_bronze_tables.sql
+          psql "host=localhost port=5432 dbname=cmapss user=cmapss password=cmapss" -f sql/ddl/020_ops_tables.sql
+
+      - name: Run pytest
+        run: pytest -q
+
+      - name: dbt parse
+        run: dbt parse --project-dir . --profiles-dir profiles
+
+      - name: dbt targeted build
+        run: dbt build --project-dir . --profiles-dir profiles --select silver_* gold_* --fail-fast

@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: gold_train_features
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+      - name: cycle
+        tests:
+          - not_null
+      - name: rul
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - unit_id
+            - cycle
+
+  - name: gold_test_features
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_rul_truth')
+              field: unit_id
+      - name: inferred_rul
+        tests:
+          - not_null
+
+  - name: gold_unit_latest_health
+    columns:
+      - name: unit_id
+        tests:
+          - not_null
+          - unique
+      - name: baseline_quality
+        tests:
+          - accepted_values:
+              values: ['ok', 'low']

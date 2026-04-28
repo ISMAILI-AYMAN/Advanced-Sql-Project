@@ -1,0 +1,2160 @@
+[0m15:37:44.375216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4cc846910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4ce7bd210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4cc845890>]}
+
+
+============================== 15:37:44.382914 | 2459292c-6a66-4c91-a7ed-cc2a93a71193 ==============================
+[0m15:37:44.382914 [info ] [MainThread]: Running with dbt=1.8.3
+[0m15:37:44.384598 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/project/logs', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt deps --project-dir /opt/project', 'send_anonymous_usage_stats': 'True'}
+[0m15:37:44.487631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2459292c-6a66-4c91-a7ed-cc2a93a71193', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4cc8ca6d0>]}
+[0m15:37:44.506558 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-qsh9y6m1'
+[0m15:37:44.507464 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:37:45.136113 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:37:45.137348 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:37:45.221575 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:37:45.236175 [info ] [MainThread]: Updating lock file in file path: /opt/project/package-lock.yml
+[0m15:37:45.246756 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-pvqb4aor'
+[0m15:37:45.250816 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:37:49.887082 [info ] [MainThread]: Installed from version 1.3.0
+[0m15:37:49.887976 [info ] [MainThread]: Updated version available: 1.3.3
+[0m15:37:49.888942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '2459292c-6a66-4c91-a7ed-cc2a93a71193', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4cc876790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4cc8cb250>]}
+[0m15:37:49.889777 [info ] [MainThread]: 
+[0m15:37:49.890645 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m15:37:49.892210 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 5.577588, "process_user_time": 1.516238, "process_kernel_time": 0.702438, "process_mem_max_rss": "95440", "process_out_blocks": "1304", "process_in_blocks": "0"}
+[0m15:37:49.893174 [debug] [MainThread]: Command `dbt deps` succeeded at 15:37:49.893025 after 5.58 seconds
+[0m15:37:49.893887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4cc9f7090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4ccab8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72b4d07e0590>]}
+[0m15:37:49.894743 [debug] [MainThread]: Flushing usage events
+[0m15:37:53.884040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbca73dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbc8c1410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbc8c1950>]}
+
+
+============================== 15:37:53.890164 | 113b6412-968d-4600-a28a-160f6de5deda ==============================
+[0m15:37:53.890164 [info ] [MainThread]: Running with dbt=1.8.3
+[0m15:37:53.891274 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/opt/project/logs', 'fail_fast': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt build --project-dir /opt/project --profiles-dir /root/.dbt --fail-fast', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:37:54.071961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbc8e37d0>]}
+[0m15:37:54.124619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbe6696d0>]}
+[0m15:37:54.126450 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m15:37:54.164465 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m15:37:54.171506 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:37:54.172557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbb1c6cd0>]}
+[0m15:37:56.231470 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m15:37:56.232757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbae86990>]}
+[0m15:37:56.527679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbb146490>]}
+[0m15:37:56.666275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb948bf50>]}
+[0m15:37:56.670539 [info ] [MainThread]: Found 7 models, 22 data tests, 4 sources, 531 macros
+[0m15:37:56.675627 [info ] [MainThread]: 
+[0m15:37:56.678081 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:37:56.691460 [debug] [ThreadPool]: Acquiring new postgres connection 'list_cmapss'
+[0m15:37:56.692498 [debug] [ThreadPool]: Acquiring new postgres connection 'list_cmapss'
+[0m15:37:56.778612 [debug] [ThreadPool]: Using postgres connection "list_cmapss"
+[0m15:37:56.779134 [debug] [ThreadPool]: Using postgres connection "list_cmapss"
+[0m15:37:56.780142 [debug] [ThreadPool]: On list_cmapss: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "list_cmapss"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:37:56.781341 [debug] [ThreadPool]: On list_cmapss: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "list_cmapss"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:37:56.782350 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:37:56.783244 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:37:56.797173 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m15:37:56.797615 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m15:37:56.799556 [debug] [ThreadPool]: On list_cmapss: Close
+[0m15:37:56.801587 [debug] [ThreadPool]: On list_cmapss: Close
+[0m15:37:56.806358 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_cmapss, now create_cmapss_silver_gold)
+[0m15:37:56.807197 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_cmapss, now create_cmapss_silver_silver)
+[0m15:37:56.808209 [debug] [ThreadPool]: Creating schema "database: "cmapss"
+schema: "silver_gold"
+"
+[0m15:37:56.809612 [debug] [ThreadPool]: Creating schema "database: "cmapss"
+schema: "silver_silver"
+"
+[0m15:37:56.816207 [debug] [ThreadPool]: Using postgres connection "create_cmapss_silver_gold"
+[0m15:37:56.818967 [debug] [ThreadPool]: Using postgres connection "create_cmapss_silver_silver"
+[0m15:37:56.820026 [debug] [ThreadPool]: On create_cmapss_silver_gold: BEGIN
+[0m15:37:56.821243 [debug] [ThreadPool]: On create_cmapss_silver_silver: BEGIN
+[0m15:37:56.822283 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:37:56.823105 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:37:56.835878 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:56.837192 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:56.837620 [debug] [ThreadPool]: Using postgres connection "create_cmapss_silver_gold"
+[0m15:37:56.839005 [debug] [ThreadPool]: Using postgres connection "create_cmapss_silver_silver"
+[0m15:37:56.840257 [debug] [ThreadPool]: On create_cmapss_silver_gold: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "create_cmapss_silver_gold"} */
+create schema if not exists "silver_gold"
+[0m15:37:56.841331 [debug] [ThreadPool]: On create_cmapss_silver_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "create_cmapss_silver_silver"} */
+create schema if not exists "silver_silver"
+[0m15:37:56.845041 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m15:37:56.845615 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m15:37:56.847064 [debug] [ThreadPool]: On create_cmapss_silver_gold: COMMIT
+[0m15:37:56.848774 [debug] [ThreadPool]: On create_cmapss_silver_silver: COMMIT
+[0m15:37:56.849926 [debug] [ThreadPool]: Using postgres connection "create_cmapss_silver_gold"
+[0m15:37:56.850821 [debug] [ThreadPool]: Using postgres connection "create_cmapss_silver_silver"
+[0m15:37:56.851684 [debug] [ThreadPool]: On create_cmapss_silver_gold: COMMIT
+[0m15:37:56.852503 [debug] [ThreadPool]: On create_cmapss_silver_silver: COMMIT
+[0m15:37:56.854671 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:56.855468 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:56.856216 [debug] [ThreadPool]: On create_cmapss_silver_gold: Close
+[0m15:37:56.857217 [debug] [ThreadPool]: On create_cmapss_silver_silver: Close
+[0m15:37:56.860838 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_cmapss_silver_silver, now list_cmapss_silver_gold)
+[0m15:37:56.861646 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_cmapss_silver_gold, now list_cmapss_silver_silver)
+[0m15:37:56.868697 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_gold"
+[0m15:37:56.871946 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_silver"
+[0m15:37:56.873357 [debug] [ThreadPool]: On list_cmapss_silver_gold: BEGIN
+[0m15:37:56.874451 [debug] [ThreadPool]: On list_cmapss_silver_silver: BEGIN
+[0m15:37:56.875534 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:37:56.876396 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:37:56.886627 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:56.887087 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:56.888142 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_gold"
+[0m15:37:56.889479 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_silver"
+[0m15:37:56.890756 [debug] [ThreadPool]: On list_cmapss_silver_gold: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "list_cmapss_silver_gold"} */
+select
+      'cmapss' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver_gold'
+    union all
+    select
+      'cmapss' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver_gold'
+    union all
+    select
+      'cmapss' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver_gold'
+  
+[0m15:37:56.892001 [debug] [ThreadPool]: On list_cmapss_silver_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "list_cmapss_silver_silver"} */
+select
+      'cmapss' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver_silver'
+    union all
+    select
+      'cmapss' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver_silver'
+    union all
+    select
+      'cmapss' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver_silver'
+  
+[0m15:37:56.907237 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:37:56.907749 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:37:56.909880 [debug] [ThreadPool]: On list_cmapss_silver_gold: ROLLBACK
+[0m15:37:56.911861 [debug] [ThreadPool]: On list_cmapss_silver_silver: ROLLBACK
+[0m15:37:56.913225 [debug] [ThreadPool]: On list_cmapss_silver_gold: Close
+[0m15:37:56.914406 [debug] [ThreadPool]: On list_cmapss_silver_silver: Close
+[0m15:37:56.923145 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:56.924185 [debug] [MainThread]: On master: BEGIN
+[0m15:37:56.925230 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:37:56.934798 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:56.935812 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:56.936993 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:37:56.965335 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:37:56.967727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbd741cd0>]}
+[0m15:37:56.969385 [debug] [MainThread]: On master: ROLLBACK
+[0m15:37:56.970608 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:56.971575 [debug] [MainThread]: On master: BEGIN
+[0m15:37:56.972931 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:56.973755 [debug] [MainThread]: On master: COMMIT
+[0m15:37:56.974559 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:56.975373 [debug] [MainThread]: On master: COMMIT
+[0m15:37:56.976451 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:56.977322 [debug] [MainThread]: On master: Close
+[0m15:37:56.978491 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:37:56.979770 [info ] [MainThread]: 
+[0m15:37:56.991530 [debug] [Thread-1 (]: Began running node model.cmapss_pipeline.silver_rul_truth
+[0m15:37:56.992123 [debug] [Thread-2 (]: Began running node model.cmapss_pipeline.silver_test_data
+[0m15:37:56.992614 [debug] [Thread-3 (]: Began running node model.cmapss_pipeline.silver_train_data
+[0m15:37:56.993787 [info ] [Thread-1 (]: 1 of 29 START sql table model silver_silver.silver_rul_truth ................... [RUN]
+[0m15:37:56.995211 [info ] [Thread-2 (]: 2 of 29 START sql table model silver_silver.silver_test_data ................... [RUN]
+[0m15:37:56.996651 [info ] [Thread-3 (]: 3 of 29 START sql table model silver_silver.silver_train_data .................. [RUN]
+[0m15:37:56.998473 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_cmapss_silver_silver, now model.cmapss_pipeline.silver_rul_truth)
+[0m15:37:56.999842 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_cmapss_silver_gold, now model.cmapss_pipeline.silver_test_data)
+[0m15:37:57.001236 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.cmapss_pipeline.silver_train_data'
+[0m15:37:57.002660 [debug] [Thread-1 (]: Began compiling node model.cmapss_pipeline.silver_rul_truth
+[0m15:37:57.003853 [debug] [Thread-2 (]: Began compiling node model.cmapss_pipeline.silver_test_data
+[0m15:37:57.005011 [debug] [Thread-3 (]: Began compiling node model.cmapss_pipeline.silver_train_data
+[0m15:37:57.013735 [debug] [Thread-1 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.017583 [debug] [Thread-2 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.022670 [debug] [Thread-3 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.038859 [debug] [Thread-2 (]: Began executing node model.cmapss_pipeline.silver_test_data
+[0m15:37:57.046183 [debug] [Thread-3 (]: Began executing node model.cmapss_pipeline.silver_train_data
+[0m15:37:57.064305 [debug] [Thread-1 (]: Began executing node model.cmapss_pipeline.silver_rul_truth
+[0m15:37:57.099933 [debug] [Thread-3 (]: Writing runtime sql for node "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.100639 [debug] [Thread-2 (]: Writing runtime sql for node "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.104466 [debug] [Thread-1 (]: Writing runtime sql for node "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.118858 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.120381 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: BEGIN
+[0m15:37:57.121184 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.122192 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:37:57.123116 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.123810 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: BEGIN
+[0m15:37:57.125860 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: BEGIN
+[0m15:37:57.127201 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:37:57.128475 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:57.136067 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.137441 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.138609 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_train_data"} */
+
+  
+    
+
+  create  table "cmapss"."silver_silver"."silver_train_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with ranked as (
+    select
+        *,
+        row_number() over (
+            partition by unit_id, cycle
+            order by ingestion_ts_utc desc, source_row_num desc
+        ) as dedupe_rank
+    from "cmapss"."bronze"."raw_train_data"
+),
+deduped as (
+    select *
+    from ranked
+    where dedupe_rank = 1
+),
+stats as (
+    select
+        avg(sensor_1) as mean_sensor_1, stddev_pop(sensor_1) as std_sensor_1,
+        avg(sensor_2) as mean_sensor_2, stddev_pop(sensor_2) as std_sensor_2,
+        avg(sensor_3) as mean_sensor_3, stddev_pop(sensor_3) as std_sensor_3,
+        avg(sensor_4) as mean_sensor_4, stddev_pop(sensor_4) as std_sensor_4,
+        avg(sensor_5) as mean_sensor_5, stddev_pop(sensor_5) as std_sensor_5,
+        avg(sensor_6) as mean_sensor_6, stddev_pop(sensor_6) as std_sensor_6,
+        avg(sensor_7) as mean_sensor_7, stddev_pop(sensor_7) as std_sensor_7,
+        avg(sensor_8) as mean_sensor_8, stddev_pop(sensor_8) as std_sensor_8,
+        avg(sensor_9) as mean_sensor_9, stddev_pop(sensor_9) as std_sensor_9,
+        avg(sensor_10) as mean_sensor_10, stddev_pop(sensor_10) as std_sensor_10,
+        avg(sensor_11) as mean_sensor_11, stddev_pop(sensor_11) as std_sensor_11,
+        avg(sensor_12) as mean_sensor_12, stddev_pop(sensor_12) as std_sensor_12,
+        avg(sensor_13) as mean_sensor_13, stddev_pop(sensor_13) as std_sensor_13,
+        avg(sensor_14) as mean_sensor_14, stddev_pop(sensor_14) as std_sensor_14,
+        avg(sensor_15) as mean_sensor_15, stddev_pop(sensor_15) as std_sensor_15,
+        avg(sensor_16) as mean_sensor_16, stddev_pop(sensor_16) as std_sensor_16,
+        avg(sensor_17) as mean_sensor_17, stddev_pop(sensor_17) as std_sensor_17,
+        avg(sensor_18) as mean_sensor_18, stddev_pop(sensor_18) as std_sensor_18,
+        avg(sensor_19) as mean_sensor_19, stddev_pop(sensor_19) as std_sensor_19,
+        avg(sensor_20) as mean_sensor_20, stddev_pop(sensor_20) as std_sensor_20,
+        avg(sensor_21) as mean_sensor_21, stddev_pop(sensor_21) as std_sensor_21
+    from deduped
+),
+filtered as (
+    select d.*
+    from deduped d
+    cross join stats s
+    where
+        abs(d.sensor_1 - s.mean_sensor_1) <= (6 * greatest(s.std_sensor_1, 1e-9))
+        and abs(d.sensor_2 - s.mean_sensor_2) <= (6 * greatest(s.std_sensor_2, 1e-9))
+        and abs(d.sensor_3 - s.mean_sensor_3) <= (6 * greatest(s.std_sensor_3, 1e-9))
+        and abs(d.sensor_4 - s.mean_sensor_4) <= (6 * greatest(s.std_sensor_4, 1e-9))
+        and abs(d.sensor_5 - s.mean_sensor_5) <= (6 * greatest(s.std_sensor_5, 1e-9))
+        and abs(d.sensor_6 - s.mean_sensor_6) <= (6 * greatest(s.std_sensor_6, 1e-9))
+        and abs(d.sensor_7 - s.mean_sensor_7) <= (6 * greatest(s.std_sensor_7, 1e-9))
+        and abs(d.sensor_8 - s.mean_sensor_8) <= (6 * greatest(s.std_sensor_8, 1e-9))
+        and abs(d.sensor_9 - s.mean_sensor_9) <= (6 * greatest(s.std_sensor_9, 1e-9))
+        and abs(d.sensor_10 - s.mean_sensor_10) <= (6 * greatest(s.std_sensor_10, 1e-9))
+        and abs(d.sensor_11 - s.mean_sensor_11) <= (6 * greatest(s.std_sensor_11, 1e-9))
+        and abs(d.sensor_12 - s.mean_sensor_12) <= (6 * greatest(s.std_sensor_12, 1e-9))
+        and abs(d.sensor_13 - s.mean_sensor_13) <= (6 * greatest(s.std_sensor_13, 1e-9))
+        and abs(d.sensor_14 - s.mean_sensor_14) <= (6 * greatest(s.std_sensor_14, 1e-9))
+        and abs(d.sensor_15 - s.mean_sensor_15) <= (6 * greatest(s.std_sensor_15, 1e-9))
+        and abs(d.sensor_16 - s.mean_sensor_16) <= (6 * greatest(s.std_sensor_16, 1e-9))
+        and abs(d.sensor_17 - s.mean_sensor_17) <= (6 * greatest(s.std_sensor_17, 1e-9))
+        and abs(d.sensor_18 - s.mean_sensor_18) <= (6 * greatest(s.std_sensor_18, 1e-9))
+        and abs(d.sensor_19 - s.mean_sensor_19) <= (6 * greatest(s.std_sensor_19, 1e-9))
+        and abs(d.sensor_20 - s.mean_sensor_20) <= (6 * greatest(s.std_sensor_20, 1e-9))
+        and abs(d.sensor_21 - s.mean_sensor_21) <= (6 * greatest(s.std_sensor_21, 1e-9))
+)
+select
+    cast(unit_id as integer) as unit_id,
+    cast(cycle as integer) as cycle,
+    cast(op_setting_1 as double precision) as op_setting_1,
+    cast(op_setting_2 as double precision) as op_setting_2,
+    cast(op_setting_3 as double precision) as op_setting_3,
+    cast(sensor_1 as double precision) as sensor_1,
+    cast(sensor_2 as double precision) as sensor_2,
+    cast(sensor_3 as double precision) as sensor_3,
+    cast(sensor_4 as double precision) as sensor_4,
+    cast(sensor_5 as double precision) as sensor_5,
+    cast(sensor_6 as double precision) as sensor_6,
+    cast(sensor_7 as double precision) as sensor_7,
+    cast(sensor_8 as double precision) as sensor_8,
+    cast(sensor_9 as double precision) as sensor_9,
+    cast(sensor_10 as double precision) as sensor_10,
+    cast(sensor_11 as double precision) as sensor_11,
+    cast(sensor_12 as double precision) as sensor_12,
+    cast(sensor_13 as double precision) as sensor_13,
+    cast(sensor_14 as double precision) as sensor_14,
+    cast(sensor_15 as double precision) as sensor_15,
+    cast(sensor_16 as double precision) as sensor_16,
+    cast(sensor_17 as double precision) as sensor_17,
+    cast(sensor_18 as double precision) as sensor_18,
+    cast(sensor_19 as double precision) as sensor_19,
+    cast(sensor_20 as double precision) as sensor_20,
+    cast(sensor_21 as double precision) as sensor_21,
+    '{}'::jsonb as train_extra_columns
+from filtered
+  );
+  
+[0m15:37:57.140580 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.141949 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.142984 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.143489 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_test_data"} */
+
+  
+    
+
+  create  table "cmapss"."silver_silver"."silver_test_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with ranked as (
+    select
+        *,
+        row_number() over (
+            partition by unit_id, cycle
+            order by ingestion_ts_utc desc, source_row_num desc
+        ) as dedupe_rank
+    from "cmapss"."bronze"."raw_test_data"
+),
+deduped as (
+    select *
+    from ranked
+    where dedupe_rank = 1
+)
+select
+    cast(unit_id as integer) as unit_id,
+    cast(cycle as integer) as cycle,
+    cast(op_setting_1 as double precision) as op_setting_1,
+    cast(op_setting_2 as double precision) as op_setting_2,
+    cast(op_setting_3 as double precision) as op_setting_3,
+    cast(sensor_1 as double precision) as sensor_1,
+    cast(sensor_2 as double precision) as sensor_2,
+    cast(sensor_3 as double precision) as sensor_3,
+    cast(sensor_4 as double precision) as sensor_4,
+    cast(sensor_5 as double precision) as sensor_5,
+    cast(sensor_6 as double precision) as sensor_6,
+    cast(sensor_7 as double precision) as sensor_7,
+    cast(sensor_8 as double precision) as sensor_8,
+    cast(sensor_9 as double precision) as sensor_9,
+    cast(sensor_10 as double precision) as sensor_10,
+    cast(sensor_11 as double precision) as sensor_11,
+    cast(sensor_12 as double precision) as sensor_12,
+    cast(sensor_13 as double precision) as sensor_13,
+    cast(sensor_14 as double precision) as sensor_14,
+    cast(sensor_15 as double precision) as sensor_15,
+    cast(sensor_16 as double precision) as sensor_16,
+    cast(sensor_17 as double precision) as sensor_17,
+    cast(sensor_18 as double precision) as sensor_18,
+    cast(sensor_19 as double precision) as sensor_19,
+    cast(sensor_20 as double precision) as sensor_20,
+    cast(sensor_21 as double precision) as sensor_21,
+    '{}'::jsonb as test_extra_columns
+from deduped
+  );
+  
+[0m15:37:57.144830 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.146551 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_rul_truth"} */
+
+  
+    
+
+  create  table "cmapss"."silver_silver"."silver_rul_truth__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with ranked as (
+    select
+        *,
+        row_number() over (
+            partition by unit_id
+            order by ingestion_ts_utc desc, source_row_num desc
+        ) as dedupe_rank
+    from "cmapss"."bronze"."raw_rul_truth"
+)
+select
+    cast(unit_id as integer) as unit_id,
+    cast(rul_truth as integer) as rul_truth
+from ranked
+where dedupe_rank = 1
+  );
+  
+[0m15:37:57.155224 [debug] [Thread-1 (]: SQL status: SELECT 259 in 0.0 seconds
+[0m15:37:57.162691 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.165129 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_rul_truth"} */
+alter table "cmapss"."silver_silver"."silver_rul_truth__dbt_tmp" rename to "silver_rul_truth"
+[0m15:37:57.167965 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:37:57.186734 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: COMMIT
+[0m15:37:57.188055 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.189180 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: COMMIT
+[0m15:37:57.194233 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:57.201309 [debug] [Thread-1 (]: Applying DROP to: "cmapss"."silver_silver"."silver_rul_truth__dbt_backup"
+[0m15:37:57.208609 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.silver_rul_truth"
+[0m15:37:57.209889 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_rul_truth"} */
+drop table if exists "cmapss"."silver_silver"."silver_rul_truth__dbt_backup" cascade
+[0m15:37:57.213035 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:37:57.216898 [debug] [Thread-1 (]: On model.cmapss_pipeline.silver_rul_truth: Close
+[0m15:37:57.219762 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb3de79d0>]}
+[0m15:37:57.221407 [info ] [Thread-1 (]: 1 of 29 OK created sql table model silver_silver.silver_rul_truth .............. [[32mSELECT 259[0m in 0.22s]
+[0m15:37:57.222954 [debug] [Thread-1 (]: Finished running node model.cmapss_pipeline.silver_rul_truth
+[0m15:37:57.224981 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:37:57.225663 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:37:57.226622 [info ] [Thread-4 (]: 4 of 29 START test not_null_silver_rul_truth_rul_truth ......................... [RUN]
+[0m15:37:57.227768 [info ] [Thread-1 (]: 5 of 29 START test not_null_silver_rul_truth_unit_id ........................... [RUN]
+[0m15:37:57.229233 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2'
+[0m15:37:57.230643 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_rul_truth, now test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e)
+[0m15:37:57.232017 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:37:57.233622 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:37:57.244705 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2"
+[0m15:37:57.250119 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e"
+[0m15:37:57.260429 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:37:57.268330 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:37:57.279627 [debug] [Thread-1 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e"
+[0m15:37:57.282462 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2"
+[0m15:37:57.290971 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2"
+[0m15:37:57.292661 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2: BEGIN
+[0m15:37:57.294047 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:37:57.294693 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e"
+[0m15:37:57.296895 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e: BEGIN
+[0m15:37:57.298408 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:57.306885 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.308183 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2"
+[0m15:37:57.309739 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.310582 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select rul_truth
+from "cmapss"."silver_silver"."silver_rul_truth"
+where rul_truth is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:57.311860 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e"
+[0m15:37:57.313609 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select unit_id
+from "cmapss"."silver_silver"."silver_rul_truth"
+where unit_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:57.314087 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:57.315851 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:57.319169 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2: ROLLBACK
+[0m15:37:57.321535 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e: ROLLBACK
+[0m15:37:57.322762 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2: Close
+[0m15:37:57.323569 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e: Close
+[0m15:37:57.324515 [info ] [Thread-4 (]: 4 of 29 PASS not_null_silver_rul_truth_rul_truth ............................... [[32mPASS[0m in 0.10s]
+[0m15:37:57.325940 [info ] [Thread-1 (]: 5 of 29 PASS not_null_silver_rul_truth_unit_id ................................. [[32mPASS[0m in 0.10s]
+[0m15:37:57.327460 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:37:57.329052 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:37:57.330543 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:37:57.332867 [info ] [Thread-4 (]: 6 of 29 START test unique_silver_rul_truth_unit_id ............................. [RUN]
+[0m15:37:57.334400 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2, now test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a)
+[0m15:37:57.335615 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:37:57.345240 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a"
+[0m15:37:57.356127 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:37:57.359539 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a"
+[0m15:37:57.369241 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a"
+[0m15:37:57.370581 [debug] [Thread-4 (]: On test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a: BEGIN
+[0m15:37:57.371915 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:57.383676 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.384885 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a"
+[0m15:37:57.385838 [debug] [Thread-4 (]: On test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    unit_id as unique_field,
+    count(*) as n_records
+
+from "cmapss"."silver_silver"."silver_rul_truth"
+where unit_id is not null
+group by unit_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:57.388075 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:57.390198 [debug] [Thread-4 (]: On test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a: ROLLBACK
+[0m15:37:57.391562 [debug] [Thread-4 (]: On test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a: Close
+[0m15:37:57.392790 [info ] [Thread-4 (]: 6 of 29 PASS unique_silver_rul_truth_unit_id ................................... [[32mPASS[0m in 0.06s]
+[0m15:37:57.394356 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:37:57.468214 [debug] [Thread-2 (]: SQL status: SELECT 52214 in 0.0 seconds
+[0m15:37:57.472791 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.473930 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_test_data"} */
+alter table "cmapss"."silver_silver"."silver_test_data__dbt_tmp" rename to "silver_test_data"
+[0m15:37:57.475312 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:37:57.477563 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: COMMIT
+[0m15:37:57.478755 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.479792 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: COMMIT
+[0m15:37:57.489182 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:57.495036 [debug] [Thread-2 (]: Applying DROP to: "cmapss"."silver_silver"."silver_test_data__dbt_backup"
+[0m15:37:57.496681 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.silver_test_data"
+[0m15:37:57.497971 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_test_data"} */
+drop table if exists "cmapss"."silver_silver"."silver_test_data__dbt_backup" cascade
+[0m15:37:57.499371 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:37:57.501478 [debug] [Thread-2 (]: On model.cmapss_pipeline.silver_test_data: Close
+[0m15:37:57.502718 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb3cea310>]}
+[0m15:37:57.503922 [info ] [Thread-2 (]: 2 of 29 OK created sql table model silver_silver.silver_test_data .............. [[32mSELECT 52214[0m in 0.50s]
+[0m15:37:57.505974 [debug] [Thread-2 (]: Finished running node model.cmapss_pipeline.silver_test_data
+[0m15:37:57.507842 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:37:57.508457 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:37:57.508859 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:37:57.509775 [info ] [Thread-1 (]: 7 of 29 START test dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle  [RUN]
+[0m15:37:57.511022 [info ] [Thread-4 (]: 8 of 29 START test not_null_silver_test_data_cycle ............................. [RUN]
+[0m15:37:57.512480 [info ] [Thread-2 (]: 9 of 29 START test not_null_silver_test_data_unit_id ........................... [RUN]
+[0m15:37:57.513873 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e, now test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc)
+[0m15:37:57.515145 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a, now test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b)
+[0m15:37:57.516709 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_test_data, now test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f)
+[0m15:37:57.518581 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:37:57.520034 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:37:57.521384 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:37:57.527733 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc"
+[0m15:37:57.533578 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b"
+[0m15:37:57.539891 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f"
+[0m15:37:57.546697 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:37:57.552015 [debug] [Thread-1 (]: Writing runtime sql for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc"
+[0m15:37:57.552672 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:37:57.558872 [debug] [Thread-2 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f"
+[0m15:37:57.559482 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:37:57.565425 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b"
+[0m15:37:57.567413 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc"
+[0m15:37:57.568894 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc: BEGIN
+[0m15:37:57.569704 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f"
+[0m15:37:57.571041 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:57.572654 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f: BEGIN
+[0m15:37:57.573427 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b"
+[0m15:37:57.575481 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:37:57.577037 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b: BEGIN
+[0m15:37:57.579596 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:57.585403 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.586810 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc"
+[0m15:37:57.587935 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+
+
+with validation_errors as (
+
+    select
+        unit_id, cycle
+    from "cmapss"."silver_silver"."silver_test_data"
+    group by unit_id, cycle
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:57.588906 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.590381 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f"
+[0m15:37:57.591330 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.592196 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select unit_id
+from "cmapss"."silver_silver"."silver_test_data"
+where unit_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:57.593382 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b"
+[0m15:37:57.594932 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select cycle
+from "cmapss"."silver_silver"."silver_test_data"
+where cycle is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:57.602145 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:57.602698 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:57.604597 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f: ROLLBACK
+[0m15:37:57.606699 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b: ROLLBACK
+[0m15:37:57.607908 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f: Close
+[0m15:37:57.608667 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b: Close
+[0m15:37:57.609759 [info ] [Thread-2 (]: 9 of 29 PASS not_null_silver_test_data_unit_id ................................. [[32mPASS[0m in 0.09s]
+[0m15:37:57.611093 [info ] [Thread-4 (]: 8 of 29 PASS not_null_silver_test_data_cycle ................................... [[32mPASS[0m in 0.10s]
+[0m15:37:57.612565 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:37:57.614070 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:37:57.624567 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:57.627780 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc: ROLLBACK
+[0m15:37:57.629181 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc: Close
+[0m15:37:57.630846 [info ] [Thread-1 (]: 7 of 29 PASS dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle  [[32mPASS[0m in 0.12s]
+[0m15:37:57.633249 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:37:57.635156 [debug] [Thread-2 (]: Began running node model.cmapss_pipeline.gold_test_features
+[0m15:37:57.636538 [info ] [Thread-2 (]: 10 of 29 START sql table model silver_gold.gold_test_features .................. [RUN]
+[0m15:37:57.638085 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f, now model.cmapss_pipeline.gold_test_features)
+[0m15:37:57.639218 [debug] [Thread-2 (]: Began compiling node model.cmapss_pipeline.gold_test_features
+[0m15:37:57.644362 [debug] [Thread-2 (]: Writing injected SQL for node "model.cmapss_pipeline.gold_test_features"
+[0m15:37:57.659046 [debug] [Thread-2 (]: Began executing node model.cmapss_pipeline.gold_test_features
+[0m15:37:57.664130 [debug] [Thread-2 (]: Writing runtime sql for node "model.cmapss_pipeline.gold_test_features"
+[0m15:37:57.676914 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.gold_test_features"
+[0m15:37:57.678030 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: BEGIN
+[0m15:37:57.678985 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:37:57.689014 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:57.690513 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.gold_test_features"
+[0m15:37:57.691656 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_test_features"} */
+
+  
+    
+
+  create  table "cmapss"."silver_gold"."gold_test_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with max_cycle as (
+    select unit_id, max(cycle) as max_cycle
+    from "cmapss"."silver_silver"."silver_test_data"
+    group by unit_id
+),
+joined as (
+    select
+        t.*,
+        m.max_cycle,
+        r.rul_truth
+    from "cmapss"."silver_silver"."silver_test_data" t
+    join max_cycle m using (unit_id)
+    left join "cmapss"."silver_silver"."silver_rul_truth" r using (unit_id)
+)
+select
+    unit_id,
+    cycle,
+    op_setting_1,
+    op_setting_2,
+    op_setting_3,
+    sensor_1,
+    sensor_2,
+    sensor_3,
+    sensor_4,
+    sensor_5,
+    sensor_6,
+    sensor_7,
+    sensor_8,
+    sensor_9,
+    sensor_10,
+    sensor_11,
+    sensor_12,
+    sensor_13,
+    sensor_14,
+    sensor_15,
+    sensor_16,
+    sensor_17,
+    sensor_18,
+    sensor_19,
+    sensor_20,
+    sensor_21,
+    (rul_truth + (max_cycle - cycle))::integer as inferred_rul
+from joined
+  );
+  
+[0m15:37:57.950926 [debug] [Thread-3 (]: SQL status: SELECT 71136 in 1.0 seconds
+[0m15:37:57.956464 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.957917 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_train_data"} */
+alter table "cmapss"."silver_silver"."silver_train_data__dbt_tmp" rename to "silver_train_data"
+[0m15:37:57.959712 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:37:57.963406 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: COMMIT
+[0m15:37:57.964747 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.966696 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: COMMIT
+[0m15:37:57.977684 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:57.981267 [debug] [Thread-3 (]: Applying DROP to: "cmapss"."silver_silver"."silver_train_data__dbt_backup"
+[0m15:37:57.983499 [debug] [Thread-2 (]: SQL status: SELECT 52214 in 0.0 seconds
+[0m15:37:57.984819 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_train_data"
+[0m15:37:57.988586 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.gold_test_features"
+[0m15:37:57.989772 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_train_data"} */
+drop table if exists "cmapss"."silver_silver"."silver_train_data__dbt_backup" cascade
+[0m15:37:57.990939 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_test_features"} */
+alter table "cmapss"."silver_gold"."gold_test_features__dbt_tmp" rename to "gold_test_features"
+[0m15:37:57.992309 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:37:57.993478 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:37:57.994754 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_train_data: Close
+[0m15:37:57.996623 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: COMMIT
+[0m15:37:57.997795 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb3c49b90>]}
+[0m15:37:57.998562 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.gold_test_features"
+[0m15:37:57.999711 [info ] [Thread-3 (]: 3 of 29 OK created sql table model silver_silver.silver_train_data ............. [[32mSELECT 71136[0m in 1.00s]
+[0m15:37:58.000879 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: COMMIT
+[0m15:37:58.002286 [debug] [Thread-3 (]: Finished running node model.cmapss_pipeline.silver_train_data
+[0m15:37:58.004691 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:37:58.005242 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:37:58.005755 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:58.006356 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:37:58.007013 [info ] [Thread-1 (]: 11 of 29 START test dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle  [RUN]
+[0m15:37:58.008134 [info ] [Thread-4 (]: 12 of 29 START test not_null_silver_train_data_cycle ........................... [RUN]
+[0m15:37:58.011989 [debug] [Thread-2 (]: Applying DROP to: "cmapss"."silver_gold"."gold_test_features__dbt_backup"
+[0m15:37:58.013251 [info ] [Thread-3 (]: 13 of 29 START test not_null_silver_train_data_sensor_1 ........................ [RUN]
+[0m15:37:58.014834 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc, now test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590)
+[0m15:37:58.016305 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b, now test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4)
+[0m15:37:58.018159 [debug] [Thread-2 (]: Using postgres connection "model.cmapss_pipeline.gold_test_features"
+[0m15:37:58.019543 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_train_data, now test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f)
+[0m15:37:58.021431 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:37:58.022524 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:37:58.023884 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_test_features"} */
+drop table if exists "cmapss"."silver_gold"."gold_test_features__dbt_backup" cascade
+[0m15:37:58.025262 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:37:58.031648 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590"
+[0m15:37:58.036905 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4"
+[0m15:37:58.038714 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:37:58.043404 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f"
+[0m15:37:58.047141 [debug] [Thread-2 (]: On model.cmapss_pipeline.gold_test_features: Close
+[0m15:37:58.049074 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb3ddcc50>]}
+[0m15:37:58.050347 [info ] [Thread-2 (]: 10 of 29 OK created sql table model silver_gold.gold_test_features ............. [[32mSELECT 52214[0m in 0.41s]
+[0m15:37:58.052109 [debug] [Thread-2 (]: Finished running node model.cmapss_pipeline.gold_test_features
+[0m15:37:58.052744 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:37:58.054183 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:37:58.054995 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:37:58.060024 [debug] [Thread-1 (]: Writing runtime sql for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590"
+[0m15:37:58.060962 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:37:58.062132 [info ] [Thread-2 (]: 14 of 29 START test not_null_silver_train_data_unit_id ......................... [RUN]
+[0m15:37:58.066938 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4"
+[0m15:37:58.071720 [debug] [Thread-3 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f"
+[0m15:37:58.073039 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.gold_test_features, now test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48)
+[0m15:37:58.076243 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:37:58.082369 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48"
+[0m15:37:58.083778 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590"
+[0m15:37:58.085294 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4"
+[0m15:37:58.086637 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590: BEGIN
+[0m15:37:58.087402 [debug] [Thread-3 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f"
+[0m15:37:58.088648 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4: BEGIN
+[0m15:37:58.090074 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:58.091425 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f: BEGIN
+[0m15:37:58.093026 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:58.095455 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:37:58.096045 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:37:58.101839 [debug] [Thread-2 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48"
+[0m15:37:58.104019 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.105259 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590"
+[0m15:37:58.106531 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+
+
+with validation_errors as (
+
+    select
+        unit_id, cycle
+    from "cmapss"."silver_silver"."silver_train_data"
+    group by unit_id, cycle
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.109279 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.110340 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.110806 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4"
+[0m15:37:58.111877 [debug] [Thread-3 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f"
+[0m15:37:58.113106 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select cycle
+from "cmapss"."silver_silver"."silver_train_data"
+where cycle is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.113868 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48"
+[0m15:37:58.114745 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select sensor_1
+from "cmapss"."silver_silver"."silver_train_data"
+where sensor_1 is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.116401 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48: BEGIN
+[0m15:37:58.118139 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:37:58.126801 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.127294 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.129684 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f: ROLLBACK
+[0m15:37:58.130189 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.132159 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4: ROLLBACK
+[0m15:37:58.133523 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f: Close
+[0m15:37:58.134125 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48"
+[0m15:37:58.135467 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4: Close
+[0m15:37:58.136784 [info ] [Thread-3 (]: 13 of 29 PASS not_null_silver_train_data_sensor_1 .............................. [[32mPASS[0m in 0.12s]
+[0m15:37:58.137717 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select unit_id
+from "cmapss"."silver_silver"."silver_train_data"
+where unit_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.139306 [info ] [Thread-4 (]: 12 of 29 PASS not_null_silver_train_data_cycle ................................. [[32mPASS[0m in 0.12s]
+[0m15:37:58.140803 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:37:58.143501 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:37:58.144800 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:37:58.146059 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:37:58.147167 [info ] [Thread-3 (]: 15 of 29 START test not_null_gold_test_features_inferred_rul ................... [RUN]
+[0m15:37:58.148599 [info ] [Thread-4 (]: 16 of 29 START test not_null_gold_test_features_unit_id ........................ [RUN]
+[0m15:37:58.150094 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f, now test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592)
+[0m15:37:58.151412 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4, now test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201)
+[0m15:37:58.152027 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.153292 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:37:58.154531 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:37:58.156766 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48: ROLLBACK
+[0m15:37:58.157388 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.166114 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592"
+[0m15:37:58.172427 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201"
+[0m15:37:58.173577 [debug] [Thread-2 (]: On test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48: Close
+[0m15:37:58.175537 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590: ROLLBACK
+[0m15:37:58.178482 [info ] [Thread-2 (]: 14 of 29 PASS not_null_silver_train_data_unit_id ............................... [[32mPASS[0m in 0.11s]
+[0m15:37:58.179954 [debug] [Thread-1 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590: Close
+[0m15:37:58.181399 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:37:58.182981 [info ] [Thread-1 (]: 11 of 29 PASS dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle  [[32mPASS[0m in 0.17s]
+[0m15:37:58.184105 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:37:58.185931 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:37:58.186576 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:37:58.187673 [info ] [Thread-2 (]: 17 of 29 START test relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_  [RUN]
+[0m15:37:58.189415 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:37:58.190257 [debug] [Thread-1 (]: Began running node model.cmapss_pipeline.gold_train_features
+[0m15:37:58.193368 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201"
+[0m15:37:58.194941 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48, now test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0)
+[0m15:37:58.198399 [debug] [Thread-3 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592"
+[0m15:37:58.199710 [info ] [Thread-1 (]: 18 of 29 START sql table model silver_gold.gold_train_features ................. [RUN]
+[0m15:37:58.201956 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:37:58.204246 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590, now model.cmapss_pipeline.gold_train_features)
+[0m15:37:58.211908 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0"
+[0m15:37:58.212996 [debug] [Thread-1 (]: Began compiling node model.cmapss_pipeline.gold_train_features
+[0m15:37:58.218519 [debug] [Thread-1 (]: Writing injected SQL for node "model.cmapss_pipeline.gold_train_features"
+[0m15:37:58.220481 [debug] [Thread-3 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592"
+[0m15:37:58.221536 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201"
+[0m15:37:58.222521 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592: BEGIN
+[0m15:37:58.224007 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201: BEGIN
+[0m15:37:58.225582 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:37:58.226098 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:37:58.226544 [debug] [Thread-1 (]: Began executing node model.cmapss_pipeline.gold_train_features
+[0m15:37:58.227355 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:58.231206 [debug] [Thread-2 (]: Writing runtime sql for node "test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0"
+[0m15:37:58.237540 [debug] [Thread-1 (]: Writing runtime sql for node "model.cmapss_pipeline.gold_train_features"
+[0m15:37:58.241652 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.243023 [debug] [Thread-3 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592"
+[0m15:37:58.244489 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select inferred_rul
+from "cmapss"."silver_gold"."gold_test_features"
+where inferred_rul is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.246411 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.gold_train_features"
+[0m15:37:58.247858 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: BEGIN
+[0m15:37:58.249162 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.249759 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0"
+[0m15:37:58.250220 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:58.251245 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201"
+[0m15:37:58.252284 [debug] [Thread-2 (]: On test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0: BEGIN
+[0m15:37:58.254392 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select unit_id
+from "cmapss"."silver_gold"."gold_test_features"
+where unit_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.255624 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:37:58.259100 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.261482 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592: ROLLBACK
+[0m15:37:58.262765 [debug] [Thread-3 (]: On test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592: Close
+[0m15:37:58.264286 [info ] [Thread-3 (]: 15 of 29 PASS not_null_gold_test_features_inferred_rul ......................... [[32mPASS[0m in 0.11s]
+[0m15:37:58.265294 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.265844 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.266947 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.267668 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:37:58.269851 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201: ROLLBACK
+[0m15:37:58.270836 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.gold_train_features"
+[0m15:37:58.271901 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0"
+[0m15:37:58.273277 [debug] [Thread-3 (]: Began running node model.cmapss_pipeline.silver_data_quality_report
+[0m15:37:58.274696 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201: Close
+[0m15:37:58.275421 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_train_features"} */
+
+  
+    
+
+  create  table "cmapss"."silver_gold"."gold_train_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with base as (
+    select
+        s.*,
+        max(cycle) over (partition by unit_id) as max_cycle
+    from "cmapss"."silver_silver"."silver_train_data" s
+),
+rul as (
+    select
+        *,
+        (max_cycle - cycle) as rul
+    from base
+),
+baseline as (
+    select
+        unit_id,
+        avg(sensor_1) filter (where cycle <= 20) as base_s1,
+        stddev_pop(sensor_1) filter (where cycle <= 20) as std_s1,
+        avg(sensor_2) filter (where cycle <= 20) as base_s2,
+        stddev_pop(sensor_2) filter (where cycle <= 20) as std_s2,
+        avg(sensor_3) filter (where cycle <= 20) as base_s3,
+        stddev_pop(sensor_3) filter (where cycle <= 20) as std_s3
+    from rul
+    group by unit_id
+)
+select
+    r.unit_id,
+    r.cycle,
+    r.rul,
+    r.op_setting_1,
+    r.op_setting_2,
+    r.op_setting_3,
+    r.sensor_1,
+    r.sensor_2,
+    r.sensor_3,
+    avg(r.sensor_1) over (partition by r.unit_id order by r.cycle rows between 9 preceding and current row) as sensor_1_ma_10,
+    avg(r.sensor_1) over (partition by r.unit_id order by r.cycle rows between 49 preceding and current row) as sensor_1_ma_50,
+    stddev_pop(r.sensor_1) over (partition by r.unit_id order by r.cycle rows between 9 preceding and current row) as sensor_1_std_10,
+    stddev_pop(r.sensor_1) over (partition by r.unit_id order by r.cycle rows between 49 preceding and current row) as sensor_1_std_50,
+    avg(r.sensor_2) over (partition by r.unit_id order by r.cycle rows between 9 preceding and current row) as sensor_2_ma_10,
+    avg(r.sensor_2) over (partition by r.unit_id order by r.cycle rows between 49 preceding and current row) as sensor_2_ma_50,
+    stddev_pop(r.sensor_2) over (partition by r.unit_id order by r.cycle rows between 9 preceding and current row) as sensor_2_std_10,
+    stddev_pop(r.sensor_2) over (partition by r.unit_id order by r.cycle rows between 49 preceding and current row) as sensor_2_std_50,
+    avg(r.sensor_3) over (partition by r.unit_id order by r.cycle rows between 9 preceding and current row) as sensor_3_ma_10,
+    avg(r.sensor_3) over (partition by r.unit_id order by r.cycle rows between 49 preceding and current row) as sensor_3_ma_50,
+    stddev_pop(r.sensor_3) over (partition by r.unit_id order by r.cycle rows between 9 preceding and current row) as sensor_3_std_10,
+    stddev_pop(r.sensor_3) over (partition by r.unit_id order by r.cycle rows between 49 preceding and current row) as sensor_3_std_50,
+    (r.sensor_1 - b.base_s1) / greatest(coalesce(b.std_s1, 1e-9), 1e-9) as sensor_1_zscore,
+    (r.sensor_2 - b.base_s2) / greatest(coalesce(b.std_s2, 1e-9), 1e-9) as sensor_2_zscore,
+    (r.sensor_3 - b.base_s3) / greatest(coalesce(b.std_s3, 1e-9), 1e-9) as sensor_3_zscore,
+    (r.sensor_1 - b.base_s1) as sensor_1_delta_baseline,
+    (r.sensor_2 - b.base_s2) as sensor_2_delta_baseline,
+    (r.sensor_3 - b.base_s3) as sensor_3_delta_baseline,
+    case when r.max_cycle >= 20 then 'ok' else 'low' end as baseline_quality
+from rul r
+join baseline b using (unit_id)
+  );
+  
+[0m15:37:58.276494 [debug] [Thread-2 (]: On test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select unit_id as from_field
+    from "cmapss"."silver_gold"."gold_test_features"
+    where unit_id is not null
+),
+
+parent as (
+    select unit_id as to_field
+    from "cmapss"."silver_silver"."silver_rul_truth"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.277558 [info ] [Thread-3 (]: 19 of 29 START sql table model silver_silver.silver_data_quality_report ........ [RUN]
+[0m15:37:58.279025 [info ] [Thread-4 (]: 16 of 29 PASS not_null_gold_test_features_unit_id .............................. [[32mPASS[0m in 0.13s]
+[0m15:37:58.286072 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592, now model.cmapss_pipeline.silver_data_quality_report)
+[0m15:37:58.287460 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:37:58.288651 [debug] [Thread-3 (]: Began compiling node model.cmapss_pipeline.silver_data_quality_report
+[0m15:37:58.294321 [debug] [Thread-3 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.294797 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.297637 [debug] [Thread-2 (]: On test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0: ROLLBACK
+[0m15:37:58.298973 [debug] [Thread-2 (]: On test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0: Close
+[0m15:37:58.300331 [info ] [Thread-2 (]: 17 of 29 PASS relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_  [[32mPASS[0m in 0.11s]
+[0m15:37:58.302119 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:37:58.304582 [debug] [Thread-3 (]: Began executing node model.cmapss_pipeline.silver_data_quality_report
+[0m15:37:58.309965 [debug] [Thread-3 (]: Writing runtime sql for node "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.319290 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.320611 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: BEGIN
+[0m15:37:58.321718 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:37:58.331936 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.333057 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.334125 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_data_quality_report"} */
+
+  
+    
+
+  create  table "cmapss"."silver_silver"."silver_data_quality_report__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with train_dupes as (
+    select
+        'train_duplicate_keys' as check_name,
+        count(*)::bigint as issue_count
+    from (
+        select unit_id, cycle
+        from "cmapss"."bronze"."raw_train_data"
+        group by 1, 2
+        having count(*) > 1
+    ) d
+),
+test_dupes as (
+    select
+        'test_duplicate_keys' as check_name,
+        count(*)::bigint as issue_count
+    from (
+        select unit_id, cycle
+        from "cmapss"."bronze"."raw_test_data"
+        group by 1, 2
+        having count(*) > 1
+    ) d
+),
+train_rows as (
+    select 'train_rows_after_silver' as check_name, count(*)::bigint as issue_count
+    from "cmapss"."silver_silver"."silver_train_data"
+),
+test_rows as (
+    select 'test_rows_after_silver' as check_name, count(*)::bigint as issue_count
+    from "cmapss"."silver_silver"."silver_test_data"
+)
+select * from train_dupes
+union all
+select * from test_dupes
+union all
+select * from train_rows
+union all
+select * from test_rows
+  );
+  
+[0m15:37:58.400358 [debug] [Thread-3 (]: SQL status: SELECT 4 in 0.0 seconds
+[0m15:37:58.406381 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.407565 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_data_quality_report"} */
+alter table "cmapss"."silver_silver"."silver_data_quality_report__dbt_tmp" rename to "silver_data_quality_report"
+[0m15:37:58.408936 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:37:58.468589 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: COMMIT
+[0m15:37:58.469949 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.470911 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: COMMIT
+[0m15:37:58.473491 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:58.477048 [debug] [Thread-3 (]: Applying DROP to: "cmapss"."silver_silver"."silver_data_quality_report__dbt_backup"
+[0m15:37:58.478665 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:37:58.479568 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.silver_data_quality_report"} */
+drop table if exists "cmapss"."silver_silver"."silver_data_quality_report__dbt_backup" cascade
+[0m15:37:58.480792 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:37:58.482694 [debug] [Thread-3 (]: On model.cmapss_pipeline.silver_data_quality_report: Close
+[0m15:37:58.483936 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbe591a90>]}
+[0m15:37:58.485237 [info ] [Thread-3 (]: 19 of 29 OK created sql table model silver_silver.silver_data_quality_report ... [[32mSELECT 4[0m in 0.20s]
+[0m15:37:58.486854 [debug] [Thread-3 (]: Finished running node model.cmapss_pipeline.silver_data_quality_report
+[0m15:37:58.488371 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:37:58.489313 [info ] [Thread-4 (]: 20 of 29 START test not_null_silver_data_quality_report_check_name ............. [RUN]
+[0m15:37:58.490407 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201, now test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6)
+[0m15:37:58.491446 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:37:58.497736 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6"
+[0m15:37:58.510330 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:37:58.513672 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6"
+[0m15:37:58.523325 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6"
+[0m15:37:58.524372 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6: BEGIN
+[0m15:37:58.525281 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:58.536271 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:58.537444 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6"
+[0m15:37:58.538399 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select check_name
+from "cmapss"."silver_silver"."silver_data_quality_report"
+where check_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:58.540233 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:58.542315 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6: ROLLBACK
+[0m15:37:58.543330 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6: Close
+[0m15:37:58.544456 [info ] [Thread-4 (]: 20 of 29 PASS not_null_silver_data_quality_report_check_name ................... [[32mPASS[0m in 0.05s]
+[0m15:37:58.546086 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:37:59.641945 [debug] [Thread-1 (]: SQL status: SELECT 71136 in 1.0 seconds
+[0m15:37:59.647617 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.gold_train_features"
+[0m15:37:59.648968 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_train_features"} */
+alter table "cmapss"."silver_gold"."gold_train_features__dbt_tmp" rename to "gold_train_features"
+[0m15:37:59.650489 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:37:59.653429 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: COMMIT
+[0m15:37:59.654647 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.gold_train_features"
+[0m15:37:59.656072 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: COMMIT
+[0m15:37:59.663362 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:37:59.667643 [debug] [Thread-1 (]: Applying DROP to: "cmapss"."silver_gold"."gold_train_features__dbt_backup"
+[0m15:37:59.669758 [debug] [Thread-1 (]: Using postgres connection "model.cmapss_pipeline.gold_train_features"
+[0m15:37:59.670856 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_train_features"} */
+drop table if exists "cmapss"."silver_gold"."gold_train_features__dbt_backup" cascade
+[0m15:37:59.672414 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:37:59.676014 [debug] [Thread-1 (]: On model.cmapss_pipeline.gold_train_features: Close
+[0m15:37:59.677920 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb8192250>]}
+[0m15:37:59.681500 [info ] [Thread-1 (]: 18 of 29 OK created sql table model silver_gold.gold_train_features ............ [[32mSELECT 71136[0m in 1.47s]
+[0m15:37:59.684931 [debug] [Thread-1 (]: Finished running node model.cmapss_pipeline.gold_train_features
+[0m15:37:59.688435 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:37:59.689056 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:37:59.689953 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:37:59.690626 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:37:59.699352 [info ] [Thread-1 (]: 24 of 29 START test not_null_gold_train_features_rul ........................... [RUN]
+[0m15:37:59.693391 [info ] [Thread-2 (]: 22 of 29 START test dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle  [RUN]
+[0m15:37:59.695653 [info ] [Thread-4 (]: 23 of 29 START test not_null_gold_train_features_cycle ......................... [RUN]
+[0m15:37:59.691552 [info ] [Thread-3 (]: 21 of 29 START test dbt_utils_expression_is_true_gold_train_features_rul___0 ... [RUN]
+[0m15:37:59.702825 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.gold_train_features, now test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c)
+[0m15:37:59.714039 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:37:59.709422 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6, now test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3)
+[0m15:37:59.711264 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_data_quality_report, now test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9)
+[0m15:37:59.705671 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0, now test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982)
+[0m15:37:59.727060 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c"
+[0m15:37:59.728783 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:37:59.731037 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:37:59.732959 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:37:59.745608 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3"
+[0m15:37:59.753701 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9"
+[0m15:37:59.760587 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:37:59.762343 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982"
+[0m15:37:59.770720 [debug] [Thread-1 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c"
+[0m15:37:59.776444 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:37:59.781996 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3"
+[0m15:37:59.783180 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:37:59.787491 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c"
+[0m15:37:59.788448 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:37:59.792259 [debug] [Thread-3 (]: Writing runtime sql for node "test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9"
+[0m15:37:59.795248 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c: BEGIN
+[0m15:37:59.802016 [debug] [Thread-2 (]: Writing runtime sql for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982"
+[0m15:37:59.802807 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3"
+[0m15:37:59.805847 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:37:59.808570 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3: BEGIN
+[0m15:37:59.810730 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:59.814696 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982"
+[0m15:37:59.816727 [debug] [Thread-2 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982: BEGIN
+[0m15:37:59.818000 [debug] [Thread-3 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9"
+[0m15:37:59.818583 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:37:59.820050 [debug] [Thread-3 (]: On test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9: BEGIN
+[0m15:37:59.822770 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:59.824119 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:59.825378 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:37:59.827033 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c"
+[0m15:37:59.828522 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3"
+[0m15:37:59.830921 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select rul
+from "cmapss"."silver_gold"."gold_train_features"
+where rul is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:59.832261 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select cycle
+from "cmapss"."silver_gold"."gold_train_features"
+where cycle is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:59.832895 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:59.835706 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982"
+[0m15:37:59.837019 [debug] [Thread-2 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+
+
+with validation_errors as (
+
+    select
+        unit_id, cycle
+    from "cmapss"."silver_gold"."gold_train_features"
+    group by unit_id, cycle
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:59.839622 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:59.840827 [debug] [Thread-3 (]: Using postgres connection "test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9"
+[0m15:37:59.841813 [debug] [Thread-3 (]: On test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+select
+    1
+from "cmapss"."silver_gold"."gold_train_features"
+
+where not(rul >= 0)
+
+
+      
+    ) dbt_internal_test
+[0m15:37:59.877261 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:59.877763 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:59.878250 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:59.880144 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3: ROLLBACK
+[0m15:37:59.882085 [debug] [Thread-3 (]: On test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9: ROLLBACK
+[0m15:37:59.884382 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c: ROLLBACK
+[0m15:37:59.885896 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3: Close
+[0m15:37:59.886810 [debug] [Thread-3 (]: On test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9: Close
+[0m15:37:59.887612 [debug] [Thread-1 (]: On test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c: Close
+[0m15:37:59.888564 [info ] [Thread-4 (]: 23 of 29 PASS not_null_gold_train_features_cycle ............................... [[32mPASS[0m in 0.18s]
+[0m15:37:59.889695 [info ] [Thread-3 (]: 21 of 29 PASS dbt_utils_expression_is_true_gold_train_features_rul___0 ......... [[32mPASS[0m in 0.18s]
+[0m15:37:59.891255 [info ] [Thread-1 (]: 24 of 29 PASS not_null_gold_train_features_rul ................................. [[32mPASS[0m in 0.19s]
+[0m15:37:59.892606 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:37:59.894153 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:37:59.895647 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:37:59.896997 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:37:59.899747 [info ] [Thread-4 (]: 25 of 29 START test not_null_gold_train_features_unit_id ....................... [RUN]
+[0m15:37:59.901080 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3, now test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c)
+[0m15:37:59.902025 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:59.902702 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:37:59.905604 [debug] [Thread-2 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982: ROLLBACK
+[0m15:37:59.911904 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c"
+[0m15:37:59.913666 [debug] [Thread-2 (]: On test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982: Close
+[0m15:37:59.915546 [info ] [Thread-2 (]: 22 of 29 PASS dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle  [[32mPASS[0m in 0.21s]
+[0m15:37:59.917440 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:37:59.923445 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:37:59.926894 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c"
+[0m15:37:59.936152 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c"
+[0m15:37:59.937085 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c: BEGIN
+[0m15:37:59.938067 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:37:59.948360 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:37:59.949557 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c"
+[0m15:37:59.950473 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select unit_id
+from "cmapss"."silver_gold"."gold_train_features"
+where unit_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:37:59.958814 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:37:59.960951 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c: ROLLBACK
+[0m15:37:59.962295 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c: Close
+[0m15:37:59.963499 [info ] [Thread-4 (]: 25 of 29 PASS not_null_gold_train_features_unit_id ............................. [[32mPASS[0m in 0.06s]
+[0m15:37:59.964751 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:37:59.966920 [debug] [Thread-3 (]: Began running node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:37:59.968023 [info ] [Thread-3 (]: 26 of 29 START sql table model silver_gold.gold_unit_latest_health ............. [RUN]
+[0m15:37:59.969229 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9, now model.cmapss_pipeline.gold_unit_latest_health)
+[0m15:37:59.970242 [debug] [Thread-3 (]: Began compiling node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:37:59.973969 [debug] [Thread-3 (]: Writing injected SQL for node "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:37:59.982554 [debug] [Thread-3 (]: Began executing node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:37:59.987865 [debug] [Thread-3 (]: Writing runtime sql for node "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:37:59.996247 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:37:59.997274 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: BEGIN
+[0m15:37:59.998153 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:38:00.009025 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:00.010829 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:38:00.012001 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_unit_latest_health"} */
+
+  
+    
+
+  create  table "cmapss"."silver_gold"."gold_unit_latest_health__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with ranked as (
+    select
+        *,
+        row_number() over (
+            partition by unit_id
+            order by cycle desc
+        ) as cycle_rank
+    from "cmapss"."silver_gold"."gold_train_features"
+)
+select
+    unit_id,
+    cycle as latest_cycle,
+    rul as latest_rul,
+    sensor_1_zscore,
+    sensor_2_zscore,
+    sensor_3_zscore,
+    sensor_1_delta_baseline,
+    sensor_2_delta_baseline,
+    sensor_3_delta_baseline,
+    baseline_quality
+from ranked
+where cycle_rank = 1
+  );
+  
+[0m15:38:00.081999 [debug] [Thread-3 (]: SQL status: SELECT 260 in 0.0 seconds
+[0m15:38:00.086153 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:38:00.087421 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_unit_latest_health"} */
+alter table "cmapss"."silver_gold"."gold_unit_latest_health__dbt_tmp" rename to "gold_unit_latest_health"
+[0m15:38:00.088853 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:38:00.090936 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: COMMIT
+[0m15:38:00.091864 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:38:00.092814 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: COMMIT
+[0m15:38:00.094836 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m15:38:00.098160 [debug] [Thread-3 (]: Applying DROP to: "cmapss"."silver_gold"."gold_unit_latest_health__dbt_backup"
+[0m15:38:00.099477 [debug] [Thread-3 (]: Using postgres connection "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:38:00.100403 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "model.cmapss_pipeline.gold_unit_latest_health"} */
+drop table if exists "cmapss"."silver_gold"."gold_unit_latest_health__dbt_backup" cascade
+[0m15:38:00.101793 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:38:00.103735 [debug] [Thread-3 (]: On model.cmapss_pipeline.gold_unit_latest_health: Close
+[0m15:38:00.104843 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '113b6412-968d-4600-a28a-160f6de5deda', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfb94a8ad0>]}
+[0m15:38:00.105957 [info ] [Thread-3 (]: 26 of 29 OK created sql table model silver_gold.gold_unit_latest_health ........ [[32mSELECT 260[0m in 0.14s]
+[0m15:38:00.107389 [debug] [Thread-3 (]: Finished running node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:38:00.109176 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:00.109707 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:00.110153 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:00.110943 [info ] [Thread-2 (]: 27 of 29 START test accepted_values_gold_unit_latest_health_baseline_quality__ok__low  [RUN]
+[0m15:38:00.111956 [info ] [Thread-4 (]: 28 of 29 START test not_null_gold_unit_latest_health_unit_id ................... [RUN]
+[0m15:38:00.113255 [info ] [Thread-1 (]: 29 of 29 START test unique_gold_unit_latest_health_unit_id ..................... [RUN]
+[0m15:38:00.114556 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982, now test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf)
+[0m15:38:00.115920 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c, now test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6)
+[0m15:38:00.117045 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c, now test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae)
+[0m15:38:00.118129 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:00.119352 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:00.120449 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:00.129293 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf"
+[0m15:38:00.133648 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6"
+[0m15:38:00.138372 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae"
+[0m15:38:00.144344 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:00.148218 [debug] [Thread-2 (]: Writing runtime sql for node "test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf"
+[0m15:38:00.148693 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:00.153640 [debug] [Thread-1 (]: Writing runtime sql for node "test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae"
+[0m15:38:00.154105 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:00.158247 [debug] [Thread-4 (]: Writing runtime sql for node "test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6"
+[0m15:38:00.160040 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf"
+[0m15:38:00.161326 [debug] [Thread-2 (]: On test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf: BEGIN
+[0m15:38:00.161862 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae"
+[0m15:38:00.162814 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:38:00.164158 [debug] [Thread-1 (]: On test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae: BEGIN
+[0m15:38:00.164805 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6"
+[0m15:38:00.166664 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:38:00.168018 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6: BEGIN
+[0m15:38:00.171567 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:38:00.175833 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:00.176999 [debug] [Thread-2 (]: Using postgres connection "test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf"
+[0m15:38:00.178204 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:00.178651 [debug] [Thread-2 (]: On test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        baseline_quality as value_field,
+        count(*) as n_records
+
+    from "cmapss"."silver_gold"."gold_unit_latest_health"
+    group by baseline_quality
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'ok','low'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m15:38:00.179640 [debug] [Thread-1 (]: Using postgres connection "test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae"
+[0m15:38:00.180755 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:00.181690 [debug] [Thread-1 (]: On test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    unit_id as unique_field,
+    count(*) as n_records
+
+from "cmapss"."silver_gold"."gold_unit_latest_health"
+where unit_id is not null
+group by unit_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m15:38:00.182661 [debug] [Thread-4 (]: Using postgres connection "test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6"
+[0m15:38:00.184153 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "node_id": "test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select unit_id
+from "cmapss"."silver_gold"."gold_unit_latest_health"
+where unit_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m15:38:00.184543 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:38:00.184952 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:38:00.187505 [debug] [Thread-2 (]: On test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf: ROLLBACK
+[0m15:38:00.187996 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:38:00.189748 [debug] [Thread-1 (]: On test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae: ROLLBACK
+[0m15:38:00.190928 [debug] [Thread-2 (]: On test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf: Close
+[0m15:38:00.192551 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6: ROLLBACK
+[0m15:38:00.193741 [debug] [Thread-1 (]: On test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae: Close
+[0m15:38:00.194936 [info ] [Thread-2 (]: 27 of 29 PASS accepted_values_gold_unit_latest_health_baseline_quality__ok__low  [[32mPASS[0m in 0.08s]
+[0m15:38:00.196212 [debug] [Thread-4 (]: On test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6: Close
+[0m15:38:00.197501 [info ] [Thread-1 (]: 29 of 29 PASS unique_gold_unit_latest_health_unit_id ........................... [[32mPASS[0m in 0.08s]
+[0m15:38:00.198776 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:00.200251 [info ] [Thread-4 (]: 28 of 29 PASS not_null_gold_unit_latest_health_unit_id ......................... [[32mPASS[0m in 0.08s]
+[0m15:38:00.201583 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:00.204448 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:00.208272 [debug] [MainThread]: Using postgres connection "master"
+[0m15:38:00.209374 [debug] [MainThread]: On master: BEGIN
+[0m15:38:00.210240 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:38:00.221086 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:00.222174 [debug] [MainThread]: On master: COMMIT
+[0m15:38:00.223037 [debug] [MainThread]: Using postgres connection "master"
+[0m15:38:00.223838 [debug] [MainThread]: On master: COMMIT
+[0m15:38:00.224859 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:38:00.225749 [debug] [MainThread]: On master: Close
+[0m15:38:00.226773 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:38:00.227642 [debug] [MainThread]: Connection 'test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf' was properly closed.
+[0m15:38:00.228646 [debug] [MainThread]: Connection 'test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae' was properly closed.
+[0m15:38:00.229563 [debug] [MainThread]: Connection 'model.cmapss_pipeline.gold_unit_latest_health' was properly closed.
+[0m15:38:00.230375 [debug] [MainThread]: Connection 'test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6' was properly closed.
+[0m15:38:00.231642 [info ] [MainThread]: 
+[0m15:38:00.232742 [info ] [MainThread]: Finished running 7 table models, 22 data tests in 0 hours 0 minutes and 3.55 seconds (3.55s).
+[0m15:38:00.238571 [debug] [MainThread]: Command end result
+[0m15:38:00.306899 [info ] [MainThread]: 
+[0m15:38:00.308278 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:38:00.309639 [info ] [MainThread]: 
+[0m15:38:00.310926 [info ] [MainThread]: Done. PASS=29 WARN=0 ERROR=0 SKIP=0 TOTAL=29
+[0m15:38:00.312891 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 6.4910107, "process_user_time": 4.472927, "process_kernel_time": 0.579749, "process_mem_max_rss": "122532", "process_out_blocks": "1272", "process_in_blocks": "0"}
+[0m15:38:00.314526 [debug] [MainThread]: Command `dbt build` succeeded at 15:38:00.314363 after 6.49 seconds
+[0m15:38:00.315748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfc0854850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfc0948750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74cfbb12c650>]}
+[0m15:38:00.316814 [debug] [MainThread]: Flushing usage events
+[0m15:38:04.162951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f866328b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f86632b790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f866328a90>]}
+
+
+============================== 15:38:04.170179 | aff59aa2-4257-451d-94f4-07fa51597cc5 ==============================
+[0m15:38:04.170179 [info ] [MainThread]: Running with dbt=1.8.3
+[0m15:38:04.171623 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/opt/project/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt docs generate --project-dir /opt/project --profiles-dir /root/.dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:38:04.347097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aff59aa2-4257-451d-94f4-07fa51597cc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f864a3e850>]}
+[0m15:38:04.415852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aff59aa2-4257-451d-94f4-07fa51597cc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f867f01850>]}
+[0m15:38:04.417607 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m15:38:04.454835 [debug] [MainThread]: checksum: 30bd4080c2bc8dee5936f8f60083ffbe1c906859d0fd965607c2144031479456, vars: {}, profile: , target: , version: 1.8.3
+[0m15:38:05.337578 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:38:05.338405 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:38:05.378898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aff59aa2-4257-451d-94f4-07fa51597cc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f8647cf550>]}
+[0m15:38:05.402617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aff59aa2-4257-451d-94f4-07fa51597cc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f866263d50>]}
+[0m15:38:05.403754 [info ] [MainThread]: Found 7 models, 22 data tests, 4 sources, 531 macros
+[0m15:38:05.404845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aff59aa2-4257-451d-94f4-07fa51597cc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f86496bf90>]}
+[0m15:38:05.408491 [info ] [MainThread]: 
+[0m15:38:05.409860 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:38:05.415481 [debug] [ThreadPool]: Acquiring new postgres connection 'list_cmapss_silver_gold'
+[0m15:38:05.416484 [debug] [ThreadPool]: Acquiring new postgres connection 'list_cmapss_silver_silver'
+[0m15:38:05.496912 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_gold"
+[0m15:38:05.497304 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_silver"
+[0m15:38:05.498231 [debug] [ThreadPool]: On list_cmapss_silver_gold: BEGIN
+[0m15:38:05.499378 [debug] [ThreadPool]: On list_cmapss_silver_silver: BEGIN
+[0m15:38:05.500652 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:38:05.501955 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:38:05.515313 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:05.515836 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:05.516788 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_gold"
+[0m15:38:05.517962 [debug] [ThreadPool]: Using postgres connection "list_cmapss_silver_silver"
+[0m15:38:05.519097 [debug] [ThreadPool]: On list_cmapss_silver_gold: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "list_cmapss_silver_gold"} */
+select
+      'cmapss' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver_gold'
+    union all
+    select
+      'cmapss' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver_gold'
+    union all
+    select
+      'cmapss' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver_gold'
+  
+[0m15:38:05.520471 [debug] [ThreadPool]: On list_cmapss_silver_silver: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "list_cmapss_silver_silver"} */
+select
+      'cmapss' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver_silver'
+    union all
+    select
+      'cmapss' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver_silver'
+    union all
+    select
+      'cmapss' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver_silver'
+  
+[0m15:38:05.534072 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m15:38:05.534529 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m15:38:05.536567 [debug] [ThreadPool]: On list_cmapss_silver_gold: ROLLBACK
+[0m15:38:05.539065 [debug] [ThreadPool]: On list_cmapss_silver_silver: ROLLBACK
+[0m15:38:05.540572 [debug] [ThreadPool]: On list_cmapss_silver_gold: Close
+[0m15:38:05.541410 [debug] [ThreadPool]: On list_cmapss_silver_silver: Close
+[0m15:38:05.549394 [debug] [MainThread]: Using postgres connection "master"
+[0m15:38:05.550529 [debug] [MainThread]: On master: BEGIN
+[0m15:38:05.551440 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:38:05.562679 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:05.564044 [debug] [MainThread]: Using postgres connection "master"
+[0m15:38:05.565314 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:38:05.602869 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:38:05.604605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aff59aa2-4257-451d-94f4-07fa51597cc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f8649e1d50>]}
+[0m15:38:05.605500 [debug] [MainThread]: On master: ROLLBACK
+[0m15:38:05.606407 [debug] [MainThread]: On master: Close
+[0m15:38:05.607454 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:38:05.608356 [info ] [MainThread]: 
+[0m15:38:05.620580 [debug] [Thread-1 (]: Began running node model.cmapss_pipeline.silver_rul_truth
+[0m15:38:05.621512 [debug] [Thread-2 (]: Began running node model.cmapss_pipeline.silver_test_data
+[0m15:38:05.622145 [debug] [Thread-3 (]: Began running node model.cmapss_pipeline.silver_train_data
+[0m15:38:05.623741 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_cmapss_silver_silver, now model.cmapss_pipeline.silver_rul_truth)
+[0m15:38:05.624987 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_cmapss_silver_gold, now model.cmapss_pipeline.silver_test_data)
+[0m15:38:05.626622 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.cmapss_pipeline.silver_train_data'
+[0m15:38:05.627912 [debug] [Thread-1 (]: Began compiling node model.cmapss_pipeline.silver_rul_truth
+[0m15:38:05.629053 [debug] [Thread-2 (]: Began compiling node model.cmapss_pipeline.silver_test_data
+[0m15:38:05.630224 [debug] [Thread-3 (]: Began compiling node model.cmapss_pipeline.silver_train_data
+[0m15:38:05.638878 [debug] [Thread-1 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_rul_truth"
+[0m15:38:05.642527 [debug] [Thread-2 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_test_data"
+[0m15:38:05.647103 [debug] [Thread-3 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_train_data"
+[0m15:38:05.654319 [debug] [Thread-1 (]: Began executing node model.cmapss_pipeline.silver_rul_truth
+[0m15:38:05.654935 [debug] [Thread-2 (]: Began executing node model.cmapss_pipeline.silver_test_data
+[0m15:38:05.655568 [debug] [Thread-3 (]: Began executing node model.cmapss_pipeline.silver_train_data
+[0m15:38:05.656700 [debug] [Thread-1 (]: Finished running node model.cmapss_pipeline.silver_rul_truth
+[0m15:38:05.658016 [debug] [Thread-2 (]: Finished running node model.cmapss_pipeline.silver_test_data
+[0m15:38:05.659332 [debug] [Thread-3 (]: Finished running node model.cmapss_pipeline.silver_train_data
+[0m15:38:05.661005 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:38:05.661387 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:38:05.662080 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:38:05.663367 [debug] [Thread-3 (]: Began running node model.cmapss_pipeline.gold_test_features
+[0m15:38:05.664487 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2'
+[0m15:38:05.665402 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_rul_truth, now test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e)
+[0m15:38:05.666447 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_test_data, now test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a)
+[0m15:38:05.667489 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_train_data, now model.cmapss_pipeline.gold_test_features)
+[0m15:38:05.668390 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:38:05.669399 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:38:05.670323 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:38:05.671430 [debug] [Thread-3 (]: Began compiling node model.cmapss_pipeline.gold_test_features
+[0m15:38:05.685502 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2"
+[0m15:38:05.689791 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e"
+[0m15:38:05.696705 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a"
+[0m15:38:05.700685 [debug] [Thread-3 (]: Writing injected SQL for node "model.cmapss_pipeline.gold_test_features"
+[0m15:38:05.708080 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:38:05.708843 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:38:05.709437 [debug] [Thread-3 (]: Began executing node model.cmapss_pipeline.gold_test_features
+[0m15:38:05.710610 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e
+[0m15:38:05.711034 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:38:05.712223 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2
+[0m15:38:05.713498 [debug] [Thread-3 (]: Finished running node model.cmapss_pipeline.gold_test_features
+[0m15:38:05.714758 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:38:05.716377 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a
+[0m15:38:05.717556 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:38:05.718711 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:38:05.720105 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_rul_truth_unit_id.3226c61e8e, now test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc)
+[0m15:38:05.721381 [debug] [Thread-2 (]: Began running node model.cmapss_pipeline.gold_train_features
+[0m15:38:05.722487 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_rul_truth_rul_truth.7dc85f89b2, now test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b)
+[0m15:38:05.723660 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.gold_test_features, now test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f)
+[0m15:38:05.724595 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:38:05.725577 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.unique_silver_rul_truth_unit_id.5d0d7b5b7a, now model.cmapss_pipeline.gold_train_features)
+[0m15:38:05.726483 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:38:05.727429 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:38:05.738104 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc"
+[0m15:38:05.739162 [debug] [Thread-2 (]: Began compiling node model.cmapss_pipeline.gold_train_features
+[0m15:38:05.744243 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b"
+[0m15:38:05.749073 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f"
+[0m15:38:05.754883 [debug] [Thread-2 (]: Writing injected SQL for node "model.cmapss_pipeline.gold_train_features"
+[0m15:38:05.761354 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:38:05.762121 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:38:05.762746 [debug] [Thread-2 (]: Began executing node model.cmapss_pipeline.gold_train_features
+[0m15:38:05.764073 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc
+[0m15:38:05.764563 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:38:05.765644 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f
+[0m15:38:05.766855 [debug] [Thread-2 (]: Finished running node model.cmapss_pipeline.gold_train_features
+[0m15:38:05.767868 [debug] [Thread-1 (]: Began running node model.cmapss_pipeline.silver_data_quality_report
+[0m15:38:05.769063 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b
+[0m15:38:05.770033 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:38:05.771018 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:38:05.772382 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_test_data_unit_id__cycle.1f3ef2a4fc, now model.cmapss_pipeline.silver_data_quality_report)
+[0m15:38:05.773392 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:38:05.774426 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_test_data_unit_id.54756cef7f, now test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590)
+[0m15:38:05.775623 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.gold_train_features, now test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4)
+[0m15:38:05.776550 [debug] [Thread-1 (]: Began compiling node model.cmapss_pipeline.silver_data_quality_report
+[0m15:38:05.777508 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_test_data_cycle.8845acba7b, now test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f)
+[0m15:38:05.778506 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:38:05.779431 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:38:05.784723 [debug] [Thread-1 (]: Writing injected SQL for node "model.cmapss_pipeline.silver_data_quality_report"
+[0m15:38:05.785997 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:38:05.792719 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590"
+[0m15:38:05.797157 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4"
+[0m15:38:05.802586 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f"
+[0m15:38:05.808655 [debug] [Thread-1 (]: Began executing node model.cmapss_pipeline.silver_data_quality_report
+[0m15:38:05.810810 [debug] [Thread-1 (]: Finished running node model.cmapss_pipeline.silver_data_quality_report
+[0m15:38:05.811511 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:38:05.812177 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:38:05.813007 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:38:05.813981 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:38:05.815880 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4
+[0m15:38:05.817374 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590
+[0m15:38:05.818736 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f
+[0m15:38:05.819853 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.silver_data_quality_report, now test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48)
+[0m15:38:05.821268 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:38:05.822445 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:38:05.823671 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:38:05.824679 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:38:05.825703 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_train_data_cycle.602fc2bcf4, now test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592)
+[0m15:38:05.826838 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_silver_train_data_unit_id__cycle.cb7a261590, now test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201)
+[0m15:38:05.828095 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_train_data_sensor_1.320bf9f23f, now test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0)
+[0m15:38:05.833080 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48"
+[0m15:38:05.834261 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:38:05.835223 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:38:05.836380 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:38:05.841874 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592"
+[0m15:38:05.846799 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201"
+[0m15:38:05.853178 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:38:05.856148 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0"
+[0m15:38:05.859317 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48
+[0m15:38:05.861311 [debug] [Thread-1 (]: Began running node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:38:05.862758 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_silver_train_data_unit_id.dd63c62e48, now model.cmapss_pipeline.gold_unit_latest_health)
+[0m15:38:05.864324 [debug] [Thread-1 (]: Began compiling node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:38:05.864872 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:38:05.865433 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:38:05.866112 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:38:05.869516 [debug] [Thread-1 (]: Writing injected SQL for node "model.cmapss_pipeline.gold_unit_latest_health"
+[0m15:38:05.871013 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592
+[0m15:38:05.872456 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201
+[0m15:38:05.873779 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0
+[0m15:38:05.875654 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:38:05.876772 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:38:05.877875 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:38:05.879075 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_test_features_inferred_rul.ee8b463592, now test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9)
+[0m15:38:05.880298 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_test_features_unit_id.ddbb6d7201, now test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982)
+[0m15:38:05.881360 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.relationships_gold_test_features_unit_id__unit_id__ref_silver_rul_truth_.cb12b64af0, now test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3)
+[0m15:38:05.882644 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:38:05.883471 [debug] [Thread-1 (]: Began executing node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:38:05.884085 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:38:05.885176 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:38:05.894216 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9"
+[0m15:38:05.895472 [debug] [Thread-1 (]: Finished running node model.cmapss_pipeline.gold_unit_latest_health
+[0m15:38:05.900904 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982"
+[0m15:38:05.907450 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3"
+[0m15:38:05.909367 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:38:05.912504 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.cmapss_pipeline.gold_unit_latest_health, now test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c)
+[0m15:38:05.913786 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:38:05.919841 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c"
+[0m15:38:05.920378 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:38:05.920921 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:38:05.921797 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:38:05.923048 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982
+[0m15:38:05.924927 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9
+[0m15:38:05.926802 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3
+[0m15:38:05.929762 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:38:05.931430 [debug] [Thread-2 (]: Began running node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:38:05.933703 [debug] [Thread-4 (]: Began running node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:05.934921 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:38:05.935558 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_unique_combination_of_columns_gold_train_features_unit_id__cycle.5020423982, now test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c)
+[0m15:38:05.936864 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.dbt_utils_expression_is_true_gold_train_features_rul___0.321a1b62b9, now test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6)
+[0m15:38:05.938185 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_train_features_cycle.5778f03be3, now test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf)
+[0m15:38:05.939811 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c
+[0m15:38:05.941169 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:38:05.942244 [debug] [Thread-2 (]: Began compiling node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:38:05.943395 [debug] [Thread-4 (]: Began compiling node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:05.944643 [debug] [Thread-1 (]: Began running node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:05.950006 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c"
+[0m15:38:05.955477 [debug] [Thread-2 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6"
+[0m15:38:05.966863 [debug] [Thread-4 (]: Writing injected SQL for node "test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf"
+[0m15:38:05.968049 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_train_features_rul.0716511b5c, now test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6)
+[0m15:38:05.971392 [debug] [Thread-1 (]: Began compiling node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:05.977443 [debug] [Thread-1 (]: Writing injected SQL for node "test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6"
+[0m15:38:05.979205 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:38:05.979854 [debug] [Thread-4 (]: Began executing node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:05.981001 [debug] [Thread-2 (]: Began executing node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:38:05.981815 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c
+[0m15:38:05.983321 [debug] [Thread-4 (]: Finished running node test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf
+[0m15:38:05.984208 [debug] [Thread-1 (]: Began executing node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:05.985412 [debug] [Thread-2 (]: Finished running node test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6
+[0m15:38:05.986683 [debug] [Thread-3 (]: Began running node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:05.988790 [debug] [Thread-1 (]: Finished running node test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6
+[0m15:38:05.990463 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.cmapss_pipeline.not_null_gold_train_features_unit_id.14b1c5474c, now test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae)
+[0m15:38:05.992092 [debug] [Thread-3 (]: Began compiling node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:05.996663 [debug] [Thread-3 (]: Writing injected SQL for node "test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae"
+[0m15:38:06.005574 [debug] [Thread-3 (]: Began executing node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:06.006920 [debug] [Thread-3 (]: Finished running node test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae
+[0m15:38:06.009366 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:38:06.010228 [debug] [MainThread]: Connection 'test.cmapss_pipeline.not_null_silver_data_quality_report_check_name.a2865e77e6' was properly closed.
+[0m15:38:06.011070 [debug] [MainThread]: Connection 'test.cmapss_pipeline.not_null_gold_unit_latest_health_unit_id.3cee773dd6' was properly closed.
+[0m15:38:06.011894 [debug] [MainThread]: Connection 'test.cmapss_pipeline.unique_gold_unit_latest_health_unit_id.81097b43ae' was properly closed.
+[0m15:38:06.012766 [debug] [MainThread]: Connection 'test.cmapss_pipeline.accepted_values_gold_unit_latest_health_baseline_quality__ok__low.f4841510bf' was properly closed.
+[0m15:38:06.018283 [debug] [MainThread]: Command end result
+[0m15:38:06.221462 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m15:38:06.222518 [info ] [MainThread]: Building catalog
+[0m15:38:06.241319 [debug] [ThreadPool]: Acquiring new postgres connection 'cmapss.information_schema'
+[0m15:38:06.254601 [debug] [ThreadPool]: Using postgres connection "cmapss.information_schema"
+[0m15:38:06.256088 [debug] [ThreadPool]: On cmapss.information_schema: BEGIN
+[0m15:38:06.257755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:38:06.271788 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:38:06.273046 [debug] [ThreadPool]: Using postgres connection "cmapss.information_schema"
+[0m15:38:06.274215 [debug] [ThreadPool]: On cmapss.information_schema: /* {"app": "dbt", "dbt_version": "1.8.3", "profile_name": "cmapss_pipeline", "target_name": "dev", "connection_name": "cmapss.information_schema"} */
+
+    
+    
+
+    select
+        'cmapss' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('silver_silver') and
+           upper(tbl.relname) = upper('silver_test_data')) or (upper(sch.nspname) = upper('silver_silver') and
+           upper(tbl.relname) = upper('silver_rul_truth')) or (upper(sch.nspname) = upper('silver_silver') and
+           upper(tbl.relname) = upper('silver_data_quality_report')) or (upper(sch.nspname) = upper('silver_gold') and
+           upper(tbl.relname) = upper('gold_test_features')) or (upper(sch.nspname) = upper('silver_gold') and
+           upper(tbl.relname) = upper('gold_train_features')) or (upper(sch.nspname) = upper('silver_gold') and
+           upper(tbl.relname) = upper('gold_unit_latest_health')) or (upper(sch.nspname) = upper('bronze') and
+           upper(tbl.relname) = upper('raw_test_data')) or (upper(sch.nspname) = upper('silver_silver') and
+           upper(tbl.relname) = upper('silver_train_data')) or (upper(sch.nspname) = upper('ops') and
+           upper(tbl.relname) = upper('sensor_physical_bounds')) or (upper(sch.nspname) = upper('bronze') and
+           upper(tbl.relname) = upper('raw_rul_truth')) or (upper(sch.nspname) = upper('bronze') and
+           upper(tbl.relname) = upper('raw_train_data')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m15:38:06.291005 [debug] [ThreadPool]: SQL status: SELECT 194 in 0.0 seconds
+[0m15:38:06.303527 [debug] [ThreadPool]: On cmapss.information_schema: ROLLBACK
+[0m15:38:06.304709 [debug] [ThreadPool]: On cmapss.information_schema: Close
+[0m15:38:06.400784 [info ] [MainThread]: Catalog written to /opt/project/target/catalog.json
+[0m15:38:06.403037 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 2.3012643, "process_user_time": 2.258321, "process_kernel_time": 0.524182, "process_mem_max_rss": "114100", "process_out_blocks": "1272", "process_in_blocks": "0"}
+[0m15:38:06.404476 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:38:06.404351 after 2.30 seconds
+[0m15:38:06.405547 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:38:06.406567 [debug] [MainThread]: Connection 'cmapss.information_schema' was properly closed.
+[0m15:38:06.407643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f86a114910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f86a2705d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72f866368750>]}
+[0m15:38:06.408934 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,136 @@
+# Project: IIoT Predictive Maintenance Data Warehouse (NASA C-MAPSS)
+
+## Objective
+Build a deterministic, idempotent NASA C-MAPSS medallion pipeline that produces:
+- Source-faithful raw data (Bronze)
+- Clean, typed, deduplicated telemetry (Silver)
+- RUL and health features for analytics and ML (Gold)
+
+## Non-Negotiable Constraints
+- All transformations are stateless and idempotent.
+- Deterministic ordering uses `(unit_id, cycle)` ascending.
+- Atomic writes are required (stage -> validate -> swap).
+- No source mutation is allowed.
+- Gold publish is blocked if critical quality tests fail.
+
+## 1. Data Organization Layer (Pre-Ingestion)
+* **Purpose:** Organize raw assets into deterministic, auditable structure before loading.
+* **Required Folder Contract:**
+  - `data/raw/train/`
+  - `data/raw/test/`
+  - `data/raw/truth/`
+  - `data/staging/`
+  - `data/archive/`
+* **Required Actions:**
+  1. Inventory all incoming files with checksum (SHA256), byte size, and modified timestamp.
+  2. Validate naming convention (`train_*.txt`, `test_*.txt`, `RUL_*.txt` or mapped equivalent).
+  3. Confirm one-to-one split assignment (no file appears in more than one split).
+  4. Build `data_file_manifest` with: `file_id`, `file_path`, `split`, `checksum`, `record_count`, `status`.
+  5. Reject duplicate files by checksum unless explicitly version-bumped.
+  6. Move validated files to organized raw folders; quarantine invalid files.
+* **Gate:** Ingestion cannot start unless manifest status is `approved` for all required files.
+
+## 2. Data Ingestion Layer (Extract and Load)
+* **Source:** NASA C-MAPSS space-delimited `.txt` files.
+* **Mechanism:** Python (`pandas` + SQLAlchemy) or Airflow DAG.
+* **Action:** Load raw files into Bronze with ingestion metadata.
+* **Fail-Fast Conditions:** Missing required canonical columns or malformed row structure.
+
+Canonical telemetry assumptions:
+- identifiers: `unit_id`, `cycle`
+- operating settings: `op_setting_1..3`
+- sensors: `sensor_1..sensor_21`
+- truth file contains one RUL value per test `unit_id`
+
+## 3. Transformation Layers (Medallion Architecture)
+
+### A. Bronze Layer (Raw Landing)
+* **Purpose:** Exact source fidelity and replayability.
+* **Tables:** `raw_train_data`, `raw_test_data`, `raw_rul_truth`, `ingestion_audit_log`.
+* **Required Metadata Columns:** `ingestion_id` (UUID), `ingestion_ts_utc`, `source_file_name`, `source_row_num`.
+* **Rules:**
+  - No business logic or semantic renaming.
+  - Duplicate rows may exist in Bronze.
+
+### B. Silver Layer (Staging and Cleansing)
+* **Purpose:** Data consistency, strong typing, and quality enforcement.
+* **Models:** `silver_train_data`, `silver_test_data`, `silver_rul_truth`, `silver_data_quality_report`.
+* **Required Actions:**
+  1. Normalize to canonical snake_case column names.
+  2. Enforce strict types:
+     - `unit_id`, `cycle`: integer
+     - settings and sensors: float
+  3. Deduplicate on `(unit_id, cycle)`:
+     - keep latest `ingestion_ts_utc`, tie-break by max `source_row_num`.
+  4. Remove zero-variance sensors per dataset split.
+  5. Apply physical plausibility filtering:
+     - default rule: keep values within `mean +/- 6 * std` per sensor per FD subset
+     - override only via versioned `sensor_physical_bounds(lower_bound, upper_bound, source)`
+  6. Log all dropped records and reasons in quality report.
+  7. Handle schema drift:
+     - missing required columns -> fail
+     - unexpected new columns -> quarantine in `*_extra_columns` JSON field and continue with warning
+
+### C. Gold Layer (Analytics and ML-Ready Marts)
+* **Purpose:** Stable features and targets for BI and model training/inference.
+* **Models:** `gold_train_features`, `gold_test_features`, `gold_unit_latest_health`.
+* **Required SQL Logic Blocks:**
+  1. **RUL (Train):**
+     - `max_cycle = max(cycle) over (partition by unit_id)`
+     - `rul = max_cycle - cycle`
+  2. **RUL (Test Alignment):**
+     - join `silver_test_data` with `silver_rul_truth` on `unit_id`
+     - use truth RUL at last cycle, infer earlier cycles by reverse offset
+  3. **Rolling Statistics:**
+     - moving average windows: 10 and 50 cycles
+     - moving standard deviation windows: 10 and 50 cycles
+  4. **Health Indicators:**
+     - z-score: `(x - mean_unit_baseline) / std_unit_baseline`
+     - delta-from-baseline: `x - baseline_first_n_cycles_mean`
+  5. **Baseline Definition:**
+     - baseline window is first 20 cycles per unit
+     - if unit has fewer than 20 cycles, use available cycles and flag `baseline_quality = 'low'`
+
+## 4. Data Governance and Quality (dbt)
+* **Required Tests:**
+  - `not_null` on keys and critical feature columns
+  - `unique` on `(unit_id, cycle)` in Silver and Gold
+  - relationship tests between Silver and Gold entities
+  - accepted range tests: `rul >= 0`, valid finite z-scores where baseline is valid
+* **Execution Policy:**
+  - run `dbt build` for DAG + tests
+  - generate docs and lineage only after successful build
+  - do not publish Gold artifacts when any `severity=error` test fails
+* **Versioning:** Git-managed SQL/dbt artifacts for CI/CD.
+
+## 5. Orchestration Contract
+Default run order:
+1. organize and validate raw files + manifest
+2. ingest to Bronze
+3. build Silver
+4. build Gold
+5. run dbt quality gates
+6. publish serving objects
+
+Retry policy:
+- transient load failures: up to 3 retries with exponential backoff
+- deterministic validation failures: fail immediately (no retry)
+
+## 6. Persistence, Observability, and Traceability
+* **Atomic Persistence:** stage -> validate row counts and keys -> swap into production.
+* **Rollback Safety:** retain prior production relation until post-deploy checks pass.
+* **Run Metadata (Required):**
+  - `run_id` UUID
+  - `pipeline_version` (git commit hash)
+  - `start_ts_utc`, `end_ts_utc`
+  - row counts in/out by layer
+  - dropped rows by reason
+  - removed zero-variance sensors
+* **Logging:** persist run log table and emit structured JSON logs.
+
+## 6. Serving Layer (Output)
+* **BI Output:** `gold_unit_latest_health` for fleet monitoring dashboards (PowerBI/Tableau).
+* **ML Output:**
+  - `gold_train_features` for training
+  - `gold_test_features` for inference/scoring
+* **Config Rule:** no hardcoded local paths; schemas/paths must be environment-driven.

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: raw_train_data
+      - name: raw_test_data
+      - name: raw_rul_truth
+
+  - name: ops
+    schema: ops
+    tables:
+      - name: sensor_physical_bounds

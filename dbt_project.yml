@@ -1,0 +1,22 @@
+name: cmapss_pipeline
+version: "1.0.0"
+config-version: 2
+
+profile: cmapss_pipeline
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+test-paths: ["tests_dbt"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  cmapss_pipeline:
+    silver:
+      +schema: silver
+      +materialized: table
+    gold:
+      +schema: gold
+      +materialized: table

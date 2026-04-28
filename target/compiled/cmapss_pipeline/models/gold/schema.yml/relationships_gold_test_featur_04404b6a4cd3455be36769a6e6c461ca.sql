@@ -1,0 +1,25 @@
+
+    
+    
+
+with child as (
+    select unit_id as from_field
+    from "cmapss"."silver_gold"."gold_test_features"
+    where unit_id is not null
+),
+
+parent as (
+    select unit_id as to_field
+    from "cmapss"."silver_silver"."silver_rul_truth"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
